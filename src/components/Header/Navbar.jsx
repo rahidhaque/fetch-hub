@@ -30,7 +30,7 @@ const Navbar = () => {
     </div>
   );
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-base-100 shadow-sm max-w-7xl mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -66,7 +66,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <Link to={"https://github.com/rahidhaque"} className="btn bg-[#1A77F2] text-white border-[#005fd8]">
+        <Link to={"https://github.com/rahidhaque"} target="_blank" className="btn bg-[#1A77F2] text-white border-[#005fd8]">
             <FaGithub />
            Contribute
         </Link>
