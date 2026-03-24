@@ -1,0 +1,365 @@
+[
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Twitter-logo.svg",
+    "title": "Twitter",
+    "companyName": "Twitter Inc.",
+    "id": 1,
+    "description": "Social media platform for sharing short messages.",
+    "size": 45,
+    "reviews": 1200000,
+    "ratingAvg": 4.3,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 80000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 470000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png",
+    "title": "Instagram",
+    "companyName": "Meta",
+    "id": 2,
+    "description": "Photo and video sharing social networking service.",
+    "size": 60,
+    "reviews": 2200000,
+    "ratingAvg": 4.5,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 90000 },
+      { "name": "2 star", "count": 70000 },
+      { "name": "3 star", "count": 130000 },
+      { "name": "4 star", "count": 600000 },
+      { "name": "5 star", "count": 1310000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg",
+    "title": "Telegram",
+    "companyName": "Telegram FZ-LLC",
+    "id": 3,
+    "description": "Cloud-based messaging app with focus on speed and security.",
+    "size": 35,
+    "reviews": 900000,
+    "ratingAvg": 4.6,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 90000 },
+      { "name": "4 star", "count": 250000 },
+      { "name": "5 star", "count": 470000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg",
+    "title": "WhatsApp",
+    "companyName": "Meta",
+    "id": 4,
+    "description": "Messaging and calling app with end-to-end encryption.",
+    "size": 50,
+    "reviews": 3500000,
+    "ratingAvg": 4.4,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 300000 },
+      { "name": "4 star", "count": 1200000 },
+      { "name": "5 star", "count": 1650000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+    "title": "Apple Music",
+    "companyName": "Apple Inc.",
+    "id": 5,
+    "description": "Music streaming service with millions of songs.",
+    "size": 80,
+    "reviews": 400000,
+    "ratingAvg": 4.2,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 40000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 70000 },
+      { "name": "4 star", "count": 120000 },
+      { "name": "5 star", "count": 140000 }
+    ]
+  },
+
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/Netflix_icon.svg",
+    "title": "Netflix",
+    "companyName": "Netflix Inc.",
+    "id": 6,
+    "description": "Streaming service for movies and TV shows.",
+    "size": 90,
+    "reviews": 1800000,
+    "ratingAvg": 4.3,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 120000 },
+      { "name": "2 star", "count": 100000 },
+      { "name": "3 star", "count": 250000 },
+      { "name": "4 star", "count": 700000 },
+      { "name": "5 star", "count": 630000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
+    "title": "Facebook",
+    "companyName": "Meta",
+    "id": 7,
+    "description": "Social networking platform for connecting people.",
+    "size": 70,
+    "reviews": 5000000,
+    "ratingAvg": 4.1,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 400000 },
+      { "name": "3 star", "count": 800000 },
+      { "name": "4 star", "count": 1500000 },
+      { "name": "5 star", "count": 1800000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png",
+    "title": "Pinterest",
+    "companyName": "Pinterest Inc.",
+    "id": 8,
+    "description": "Discover ideas and inspiration platform.",
+    "size": 55,
+    "reviews": 600000,
+    "ratingAvg": 4.4,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 60000 },
+      { "name": "2 star", "count": 50000 },
+      { "name": "3 star", "count": 100000 },
+      { "name": "4 star", "count": 200000 },
+      { "name": "5 star", "count": 190000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Spotify_logo_with_text.svg",
+    "title": "Spotify",
+    "companyName": "Spotify Ltd.",
+    "id": 9,
+    "description": "Music and podcast streaming platform.",
+    "size": 75,
+    "reviews": 1500000,
+    "ratingAvg": 4.6,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 80000 },
+      { "name": "2 star", "count": 70000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 500000 },
+      { "name": "5 star", "count": 650000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/YouTube_logo_2013.svg",
+    "title": "YouTube",
+    "companyName": "Google",
+    "id": 10,
+    "description": "Video sharing and streaming platform.",
+    "size": 100,
+    "reviews": 6000000,
+    "ratingAvg": 4.5,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 900000 },
+      { "name": "4 star", "count": 2000000 },
+      { "name": "5 star", "count": 2400000 }
+    ]
+  },
+
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_Maps_icon_%282020%29.svg",
+    "title": "Google Maps",
+    "companyName": "Google",
+    "id": 11,
+    "description": "Navigation and mapping service.",
+    "size": 120,
+    "reviews": 3000000,
+    "ratingAvg": 4.4,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 180000 },
+      { "name": "3 star", "count": 500000 },
+      { "name": "4 star", "count": 1200000 },
+      { "name": "5 star", "count": 920000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png",
+    "title": "Google Drive",
+    "companyName": "Google",
+    "id": 12,
+    "description": "Cloud storage and file synchronization service.",
+    "size": 65,
+    "reviews": 1100000,
+    "ratingAvg": 4.5,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 70000 },
+      { "name": "2 star", "count": 60000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 420000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Microsoft_365_%282022%29.svg",
+    "title": "Microsoft Word",
+    "companyName": "Microsoft",
+    "id": 13,
+    "description": "Word processing application.",
+    "size": 85,
+    "reviews": 800000,
+    "ratingAvg": 4.3,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 60000 },
+      { "name": "2 star", "count": 50000 },
+      { "name": "3 star", "count": 120000 },
+      { "name": "4 star", "count": 300000 },
+      { "name": "5 star", "count": 270000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Dropbox_Icon.svg",
+    "title": "Dropbox",
+    "companyName": "Dropbox Inc.",
+    "id": 14,
+    "description": "File hosting service with cloud storage.",
+    "size": 55,
+    "reviews": 300000,
+    "ratingAvg": 4.2,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 30000 },
+      { "name": "2 star", "count": 25000 },
+      { "name": "3 star", "count": 70000 },
+      { "name": "4 star", "count": 100000 },
+      { "name": "5 star", "count": 75000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5e/TikTok_logo.svg",
+    "title": "TikTok",
+    "companyName": "ByteDance",
+    "id": 15,
+    "description": "Short-form video sharing platform.",
+    "size": 95,
+    "reviews": 4000000,
+    "ratingAvg": 4.6,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 500000 },
+      { "name": "4 star", "count": 1500000 },
+      { "name": "5 star", "count": 1650000 }
+    ]
+  },
+
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/96/Slack_icon_2019.svg",
+    "title": "Slack",
+    "companyName": "Slack Technologies",
+    "id": 16,
+    "description": "Team communication and collaboration tool.",
+    "size": 70,
+    "reviews": 250000,
+    "ratingAvg": 4.4,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 20000 },
+      { "name": "2 star", "count": 18000 },
+      { "name": "3 star", "count": 50000 },
+      { "name": "4 star", "count": 90000 },
+      { "name": "5 star", "count": 72000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Zoom_Communications_Logo.svg",
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications",
+    "id": 17,
+    "description": "Video conferencing and online meeting app.",
+    "size": 85,
+    "reviews": 1000000,
+    "ratingAvg": 4.3,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 90000 },
+      { "name": "2 star", "count": 70000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 350000 },
+      { "name": "5 star", "count": 290000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_Bélo.svg",
+    "title": "Airbnb",
+    "companyName": "Airbnb Inc.",
+    "id": 18,
+    "description": "Online marketplace for lodging and travel experiences.",
+    "size": 75,
+    "reviews": 500000,
+    "ratingAvg": 4.5,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 40000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 90000 },
+      { "name": "4 star", "count": 180000 },
+      { "name": "5 star", "count": 160000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Uber_logo_2018.png",
+    "title": "Uber",
+    "companyName": "Uber Technologies",
+    "id": 19,
+    "description": "Ride-hailing and food delivery service.",
+    "size": 90,
+    "reviews": 2000000,
+    "ratingAvg": 4.2,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 400000 },
+      { "name": "4 star", "count": 700000 },
+      { "name": "5 star", "count": 550000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Amazon_icon.svg",
+    "title": "Amazon Shopping",
+    "companyName": "Amazon",
+    "id": 20,
+    "description": "Online shopping app with millions of products.",
+    "size": 110,
+    "reviews": 2500000,
+    "ratingAvg": 4.4,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 150000 },
+      { "name": "2 star", "count": 120000 },
+      { "name": "3 star", "count": 350000 },
+      { "name": "4 star", "count": 900000 },
+      { "name": "5 star", "count": 980000 }
+    ]
+  }
+]
