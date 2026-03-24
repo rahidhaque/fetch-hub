@@ -9,6 +9,10 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
+        loader: async () => {
+          const res = await fetch('/apps.json');
+          return res.json();
+        },
         Component: Home,
       },
     ],
