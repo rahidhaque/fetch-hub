@@ -26,7 +26,7 @@ const Apps = () => {
         </p>
       </div>
 
-      <div className="mt-4 flex justify-between items-center">
+      <div className="mt-4 flex flex-col md:flex-row md:justify-between items-center gap-6">
         <div>
           <p className="underline font-extrabold">({filteredApps.length}) Apps Found</p>
         </div>
