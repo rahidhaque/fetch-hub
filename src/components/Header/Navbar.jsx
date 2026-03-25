@@ -57,11 +57,11 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">
+        <Link to={"/"} className="btn btn-ghost text-xl">
           <h1 className="text-xl text-[#632EE3] uppercase font-semibold">
             Fetch <SiFarfetch className="inline" /> Hub
           </h1>
-        </a>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
