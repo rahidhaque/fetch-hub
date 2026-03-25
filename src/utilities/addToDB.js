@@ -10,6 +10,13 @@ const getStoredApps = () =>{
     }
 }
 
+const removeFromStoredDB = (id) =>{
+    const storedApps = getStoredApps();
+    const remainingApps = storedApps.filter(appId => appId !== id);
+    const data = JSON.stringify(remainingApps);
+    localStorage.setItem('apps', data);
+}
+
 const addToStoredDB = (id) =>{
     const storedApps = getStoredApps();
     if(storedApps.includes(id)){
@@ -22,4 +29,4 @@ const addToStoredDB = (id) =>{
     }
 }
 
-export {addToStoredDB, getStoredApps};
+export {addToStoredDB, getStoredApps, removeFromStoredDB};

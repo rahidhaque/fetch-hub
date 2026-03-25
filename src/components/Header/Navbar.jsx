@@ -23,7 +23,7 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink className={navLinkClass} to="/installation">
+        <NavLink className={navLinkClass} to="/installed">
           <MdInstallDesktop /> Installation
         </NavLink>
       </li>

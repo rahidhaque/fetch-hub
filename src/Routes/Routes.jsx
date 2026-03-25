@@ -5,6 +5,7 @@ import Apps from "../pages/Apps/Apps";
 import AppDetails from "../pages/AppDetails/AppDetails";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import ErrorPageApp from "../pages/ErrorPageApp/ErrorPageApp";
+import InstalledAps from "../pages/InstalledApps/InstalledAps";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,14 @@ const router = createBrowserRouter([
           return res.json();
         },
         Component: Apps,
+      },
+      {
+        path: "/installed",
+        loader: async () => {
+          const res = await fetch("/apps.json");
+          return res.json();
+        },
+        Component: InstalledAps,
       },
       {
         path: "appDetails/:id",
