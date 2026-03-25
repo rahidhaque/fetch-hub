@@ -3,12 +3,9 @@ import { FaStar } from "react-icons/fa";
 import { IoMdTrendingUp } from "react-icons/io";
 import { PiDownloadSimple } from "react-icons/pi";
 import { Link } from "react-router";
+import App from "../App/App";
 
 const Trending = ({ apps }) => {
-  const downloadFormatter = Intl.NumberFormat("en", {
-    notation: "compact",
-    maximumFractionDigits: 1,
-  });
 
   return (
     <div className="mt-8 max-w-7xl mx-auto px-4 py-8">
@@ -24,36 +21,7 @@ const Trending = ({ apps }) => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
         {apps.slice(0, 8).map((app) => (
-          <div
-            key={app.id}
-            className="card bg-base-100 w-full shadow-sm hover:shadow-md transition"
-          >
-            <figure className="pt-6">
-              <img
-                src={app.image}
-                alt={app.title}
-                className="rounded-xl w-32 h-32 object-contain"
-              />
-            </figure>
-
-            <div className="card-body text-center px-4">
-              <h2 className="card-title justify-center">{app.title}</h2>
-
-              <div className="w-full flex justify-between items-center mt-2">
-                <div className="flex items-center text-gray-500 font-bold space-x-1">
-                  <PiDownloadSimple className="text-xl" />
-                  <span className="text-lg">
-                    {downloadFormatter.format(app.downloads)}
-                  </span>
-                </div>
-
-                <div className="flex items-center text-[#FF8811] font-bold space-x-1">
-                  <span className="text-lg">{app.ratingAvg}</span>
-                  <FaStar />
-                </div>
-              </div>
-            </div>
-          </div>
+          <App key={app.id} app={app} />
         ))}
       </div>
       <div className="flex justify-center">
