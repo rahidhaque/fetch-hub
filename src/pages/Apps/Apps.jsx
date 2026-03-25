@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData } from "react-router";
 import App from "../../components/App/App";
 
 const Apps = () => {
   const apps = useLoaderData();
+
+  const [search, setSearch] = useState("");
+
+  const handleSearchChange = (e) => {
+    setSearch(e.target.value);
+  };
+
+  const filteredApps = apps.filter((app) =>
+    app.title?.toLowerCase().includes(search.toLowerCase()),
+  );
 
   return (
     <div className="mt-8 max-w-7xl mx-auto px-4 py-8">
@@ -38,14 +48,20 @@ const Apps = () => {
                 <path d="m21 21-4.3-4.3"></path>
               </g>
             </svg>
-            <input type="search" placeholder="Search Apps" />
+            <input
+              onChange={handleSearchChange}
+              type="search"
+              placeholder="Search Apps"
+            />
           </label>
         </div>
       </div>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
-        {apps.map(app => (<App key={app.id} app={app}></App>))}
-    </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
+        {filteredApps.map((app) => (
+          <App key={app.id} app={app}></App>
+        ))}
+      </div>
     </div>
   );
 };
