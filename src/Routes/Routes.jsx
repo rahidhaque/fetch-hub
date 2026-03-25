@@ -30,7 +30,7 @@ const router = createBrowserRouter([
         Component: Apps,
       },
       {
-        path: "/installed",
+        path: "installed",
         loader: async () => {
           const res = await fetch("/apps.json");
           return res.json();
