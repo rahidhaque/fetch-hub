@@ -1,6 +1,7 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { PiDownloadSimple } from "react-icons/pi";
+import { Link } from "react-router";
 
 const App = ({ app }) => {
   const downloadFormatter = Intl.NumberFormat("en", {
@@ -9,7 +10,8 @@ const App = ({ app }) => {
   });
 
   return (
-    <div
+    <Link
+      to={`/appDetails/${app.id}`}
       key={app.id}
       className="card bg-base-100 w-full shadow-sm hover:shadow-md transition"
     >
@@ -38,7 +40,7 @@ const App = ({ app }) => {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

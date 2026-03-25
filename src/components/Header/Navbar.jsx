@@ -57,8 +57,8 @@ const Navbar = () => {
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">
-          <h1 class="text-xl text-[#632EE3] uppercase font-semibold">
-            FetchHub
+          <h1 className="text-xl text-[#632EE3] uppercase font-semibold">
+            Fetch Hub
           </h1>
         </a>
       </div>

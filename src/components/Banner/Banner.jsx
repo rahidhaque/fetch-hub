@@ -41,34 +41,38 @@ const Banner = () => {
       </div>
 
       <div className="bg-linear-to-r/srgb to-[#632EE3] from-[#9F62F2] w-full">
-        <div class="pt-10 flex flex-col justify-center items-center">
-          <h2 class="text-white font-bold text-2xl lg:text-4xl text-center">
+        <div className="pt-10 flex flex-col justify-center items-center">
+          <h2 className="text-white font-bold text-2xl lg:text-4xl text-center">
             Trusted by Millions, Built for You
           </h2>
-          <div class="stats stats-vertical lg:stats-horizontal  text-white py-10">
-            <div class="stat space-y-3">
-              <div class="stat-figure">
+          <div className="stats stats-vertical lg:stats-horizontal  text-white py-10">
+            <div className="stat space-y-3">
+              <div className="stat-figure">
                 <IoDownloadSharp className="text-5xl" />
               </div>
-              <div class="">Total Downloads</div>
-              <div class="stat-value  text-5xl">29.6M</div>
-              <div class="stat-desc text-white">21% more than last month</div>
+              <div className="">Total Downloads</div>
+              <div className="stat-value  text-5xl">29.6M</div>
+              <div className="stat-desc text-white">
+                21% more than last month
+              </div>
             </div>
-            <div class="stat space-y-3">
-              <div class="stat-figure ">
+            <div className="stat space-y-3">
+              <div className="stat-figure ">
                 <FaStar className="text-5xl" />
               </div>
-              <div class=" text-white">Total Reviews</div>
-              <div class="stat-value text-5xl">906K</div>
-              <div class="stat-desc text-white">46% more than last month</div>
+              <div className=" text-white">Total Reviews</div>
+              <div className="stat-value text-5xl">906K</div>
+              <div className="stat-desc text-white">
+                46% more than last month
+              </div>
             </div>
-            <div class="stat space-y-3">
-              <div class="stat-figure ">
+            <div className="stat space-y-3">
+              <div className="stat-figure ">
                 <FaGooglePlay className="text-5xl" />
               </div>
-              <div class="stat-title text-white">Active Apps</div>
-              <div class="stat-value text-5xl">132+</div>
-              <div class="stat-desc text-white">31 more will Launch</div>
+              <div className="stat-title text-white">Active Apps</div>
+              <div className="stat-value text-5xl">132+</div>
+              <div className="stat-desc text-white">31 more will Launch</div>
             </div>
           </div>
         </div>
