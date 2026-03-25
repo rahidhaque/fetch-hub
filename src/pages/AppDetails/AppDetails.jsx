@@ -3,6 +3,14 @@ import { useLoaderData, useParams } from "react-router";
 import downloadIcon from "../../assets/icon-downloads.png";
 import ratingIcon from "../../assets/icon-ratings.png";
 import reviewIcon from "../../assets/icon-review.png";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  ResponsiveContainer,
+} from "recharts";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -32,6 +40,7 @@ const AppDetails = () => {
   //   },
 
   const app = apps.find((app) => app.id === parseInt(id));
+  const ratingData = [...app.ratings].reverse();
 
   return (
     <div className="mt-8 max-w-7xl mx-auto px-4 py-8">
@@ -55,11 +64,13 @@ const AppDetails = () => {
           </div>
           <div className="stats stats-vertical lg:stats-horizontal shadow">
             <div className="stat">
-                <div className="stat-figure">
-                  <img src={downloadIcon} alt="Downloads" />
-                </div>
+              <div className="stat-figure">
+                <img src={downloadIcon} alt="Downloads" />
+              </div>
               <div className="stat-title">Downloads</div>
-              <div className="stat-value">{downloadFormatter.format(app.downloads)}</div>
+              <div className="stat-value">
+                {downloadFormatter.format(app.downloads)}
+              </div>
             </div>
 
             <div className="stat">
@@ -81,6 +92,37 @@ const AppDetails = () => {
         </div>
       </div>
       <div className="divider"></div>
+      <h2 className="text-2xl font-extrabold">Ratings</h2>
+      <div className="w-full h-[300px] mt-6">
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart
+            data={ratingData}
+            layout="vertical"
+            margin={{ top: 10, right: 30, left: 20, bottom: 10 }}
+          >
+            <XAxis
+              type="number"
+              axisLine={false}
+              tickLine={false}
+            />
+            <YAxis
+              type="category"
+              dataKey="name"
+              axisLine={false}
+              tickLine={false}
+            />
+            <Tooltip formatter={(value) => value.toLocaleString()} />
+            <Bar dataKey="count" fill="#FF8811" radius={[0, 10, 10, 0]} />
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
+      <div className="divider"></div>
+      <div>
+         <h2 className="text-2xl font-extrabold my-6">Decription</h2>
+         <p className="text-[#627382] font-medium">
+            {app.description}
+         </p>
+      </div>
     </div>
   );
 };
