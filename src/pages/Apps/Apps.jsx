@@ -28,7 +28,7 @@ const Apps = () => {
 
       <div className="mt-4 flex justify-between items-center">
         <div>
-          <p className="underline font-extrabold">({apps.length}) Apps Found</p>
+          <p className="underline font-extrabold">({filteredApps.length}) Apps Found</p>
         </div>
         <div>
           <label className="input input-primary">
@@ -57,11 +57,17 @@ const Apps = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
-        {filteredApps.map((app) => (
-          <App key={app.id} app={app}></App>
-        ))}
-      </div>
+      {filteredApps.length > 0 ? (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
+          {filteredApps.map((app) => (
+            <App key={app.id} app={app} />
+          ))}
+        </div>
+      ) : (
+        <div className="mt-20 text-center">
+          <h2 class="text-6xl font-semibold text-gray-500">No Apps Found</h2>
+        </div>
+      )}
     </div>
   );
 };
