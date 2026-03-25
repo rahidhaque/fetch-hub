@@ -25,7 +25,7 @@ const Trending = ({ apps }) => {
         ))}
       </div>
       <div className="flex justify-center">
-        <Link className="btn px-5 py-5 text-white hover:shadow-2xl bg-linear-to-r/srgb to-[#632EE3] from-[#9F62F2] mt-8">
+        <Link to={"/apps"} className="btn px-5 py-5 text-white hover:shadow-2xl bg-linear-to-r/srgb to-[#632EE3] from-[#9F62F2] mt-8">
           Show All
         </Link>
       </div>

@@ -12,34 +12,15 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
+
 const AppDetails = () => {
-  const { id } = useParams();
-  const apps = useLoaderData();
+  const app = useLoaderData();
+
   const downloadFormatter = Intl.NumberFormat("en", {
     notation: "compact",
     maximumFractionDigits: 1,
   });
 
-  //     {
-  //     "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/Netflix_icon.svg",
-  //     "title": "Netflix",
-  //     "companyName": "Netflix Inc.",
-  //     "id": 6,
-  //     "description": "Streaming service for movies and TV shows.",
-  //     "size": 90,
-  //     "reviews": 1800000,
-  //     "ratingAvg": 4.3,
-  //     "downloads": 1000000000,
-  //     "ratings": [
-  //       { "name": "1 star", "count": 120000 },
-  //       { "name": "2 star", "count": 100000 },
-  //       { "name": "3 star", "count": 250000 },
-  //       { "name": "4 star", "count": 700000 },
-  //       { "name": "5 star", "count": 630000 }
-  //     ]
-  //   },
-
-  const app = apps.find((app) => app.id === parseInt(id));
   const ratingData = [...app.ratings].reverse();
 
   return (
@@ -100,11 +81,7 @@ const AppDetails = () => {
             layout="vertical"
             margin={{ top: 10, right: 30, left: 20, bottom: 10 }}
           >
-            <XAxis
-              type="number"
-              axisLine={false}
-              tickLine={false}
-            />
+            <XAxis type="number" axisLine={false} tickLine={false} />
             <YAxis
               type="category"
               dataKey="name"
@@ -118,10 +95,8 @@ const AppDetails = () => {
       </div>
       <div className="divider"></div>
       <div>
-         <h2 className="text-2xl font-extrabold my-6">Decription</h2>
-         <p className="text-[#627382] font-medium">
-            {app.description}
-         </p>
+        <h2 className="text-2xl font-extrabold my-6">Decription</h2>
+        <p className="text-[#627382] font-medium">{app.description}</p>
       </div>
     </div>
   );

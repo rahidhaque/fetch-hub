@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Twitter-logo.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg",
     "title": "Twitter",
     "companyName": "Twitter Inc.",
     "id": 1,
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Apple_Music_logo.svg",
     "title": "Apple Music",
     "companyName": "Apple Inc.",
     "id": 5,
@@ -177,6 +177,186 @@
       { "name": "3 star", "count": 900000 },
       { "name": "4 star", "count": 2000000 },
       { "name": "5 star", "count": 2400000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/Snapchat_logo.svg",
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "id": 11,
+    "description": "Snapchat is a multimedia messaging app famous for its disappearing messages, filters, lenses, and Stories. Users can send snaps, chat with friends, discover content through Spotlight, and use augmented reality effects. It is especially popular among younger users for casual sharing and creative expression.",
+    "size": 65,
+    "reviews": 1800000,
+    "ratingAvg": 4.2,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 150000 },
+      { "name": "2 star", "count": 120000 },
+      { "name": "3 star", "count": 300000 },
+      { "name": "4 star", "count": 550000 },
+      { "name": "5 star", "count": 680000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Tiktok_icon.svg",
+    "title": "TikTok",
+    "companyName": "ByteDance",
+    "id": 12,
+    "description": "TikTok is a short-form video platform where users create, discover, and share 15-60 second videos with music, effects, and trends. It features a powerful recommendation algorithm, duets, stitches, live streaming, and creator tools. TikTok has become a global hub for viral challenges, dances, and entertainment.",
+    "size": 85,
+    "reviews": 4500000,
+    "ratingAvg": 4.7,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 400000 },
+      { "name": "4 star", "count": 1400000 },
+      { "name": "5 star", "count": 2350000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/aa/LinkedIn_2021.svg",
+    "title": "LinkedIn",
+    "companyName": "Microsoft",
+    "id": 13,
+    "description": "LinkedIn is the world's largest professional networking platform. Users build resumes, connect with colleagues, find jobs, and share industry insights. It offers company pages, job postings, learning courses, and tools for recruiters and businesses to reach professionals.",
+    "size": 95,
+    "reviews": 950000,
+    "ratingAvg": 4.4,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 120000 },
+      { "name": "4 star", "count": 350000 },
+      { "name": "5 star", "count": 390000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Reddit_logo.svg",
+    "title": "Reddit",
+    "companyName": "Reddit Inc.",
+    "id": 14,
+    "description": "Reddit is a network of communities (subreddits) where users discuss topics ranging from news and memes to niche hobbies. Users post content, vote on posts and comments, join discussions, and participate in AMAs. It is known for its authentic user-driven conversations and vast variety of communities.",
+    "size": 70,
+    "reviews": 1200000,
+    "ratingAvg": 4.5,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 80000 },
+      { "name": "2 star", "count": 70000 },
+      { "name": "3 star", "count": 180000 },
+      { "name": "4 star", "count": 420000 },
+      { "name": "5 star", "count": 450000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/83/Discord_logo.svg",
+    "title": "Discord",
+    "companyName": "Discord Inc.",
+    "id": 15,
+    "description": "Discord is a voice, video, and text communication platform originally built for gamers but now used by communities of all kinds. It offers servers, channels, screen sharing, bots, and integration with games and productivity tools. Users can join voice chats, watch together, and organize large communities.",
+    "size": 80,
+    "reviews": 1400000,
+    "ratingAvg": 4.6,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 60000 },
+      { "name": "2 star", "count": 50000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 500000 },
+      { "name": "5 star", "count": 630000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/BBC_News_2022.svg",
+    "title": "BBC News",
+    "companyName": "BBC",
+    "id": 16,
+    "description": "BBC News delivers breaking news, in-depth analysis, and live coverage from around the world. It covers politics, business, technology, science, health, entertainment, and sports with trusted journalism. The app provides personalized news feeds, video reports, and notifications for major events.",
+    "size": 55,
+    "reviews": 450000,
+    "ratingAvg": 4.3,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 30000 },
+      { "name": "2 star", "count": 25000 },
+      { "name": "3 star", "count": 70000 },
+      { "name": "4 star", "count": 160000 },
+      { "name": "5 star", "count": 165000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Amazon_Music_logo.svg",
+    "title": "Amazon Music",
+    "companyName": "Amazon",
+    "id": 17,
+    "description": "Amazon Music offers millions of songs, playlists, and podcasts with high-quality audio including HD and Ultra HD. Prime members get access to a large catalog, while Unlimited subscribers enjoy ad-free listening and offline downloads. It integrates seamlessly with Alexa and Amazon devices.",
+    "size": 85,
+    "reviews": 800000,
+    "ratingAvg": 4.4,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 110000 },
+      { "name": "4 star", "count": 280000 },
+      { "name": "5 star", "count": 320000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Twitch_logo.svg",
+    "title": "Twitch",
+    "companyName": "Amazon",
+    "id": 18,
+    "description": "Twitch is the leading live streaming platform for gamers, creators, and communities. Users watch live gameplay, esports, music, talk shows, and creative content. It features chat interaction, subscriptions, bits, and creator tools for monetization and building loyal audiences.",
+    "size": 90,
+    "reviews": 1100000,
+    "ratingAvg": 4.5,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 70000 },
+      { "name": "2 star", "count": 60000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 380000 },
+      { "name": "5 star", "count": 430000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Zoom_Communications_Logo.svg",
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications",
+    "id": 19,
+    "description": "Zoom is a video conferencing and collaboration platform used for meetings, webinars, online classes, and virtual events. It supports HD video, screen sharing, breakout rooms, recording, and chat. Zoom is widely used by businesses, schools, and individuals for remote communication.",
+    "size": 75,
+    "reviews": 2500000,
+    "ratingAvg": 4.3,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 180000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 400000 },
+      { "name": "4 star", "count": 850000 },
+      { "name": "5 star", "count": 920000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Canva_logo.svg",
+    "title": "Canva",
+    "companyName": "Canva Pty Ltd",
+    "id": 20,
+    "description": "Canva is a graphic design platform that makes it easy for anyone to create stunning visuals, presentations, social media graphics, posters, and more. It offers thousands of templates, drag-and-drop editing, AI tools, and collaboration features. Canva is popular among students, businesses, and content creators.",
+    "size": 120,
+    "reviews": 1300000,
+    "ratingAvg": 4.7,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 40000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 100000 },
+      { "name": "4 star", "count": 450000 },
+      { "name": "5 star", "count": 670000 }
     ]
   }
 ]
