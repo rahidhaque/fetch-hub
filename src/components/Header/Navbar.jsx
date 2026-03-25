@@ -1,6 +1,7 @@
 import React from "react";
 import { FaAppStore, FaGithub, FaHome } from "react-icons/fa";
 import { MdInstallDesktop } from "react-icons/md";
+import { SiFarfetch } from "react-icons/si";
 import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
@@ -58,7 +59,7 @@ const Navbar = () => {
         </div>
         <a className="btn btn-ghost text-xl">
           <h1 className="text-xl text-[#632EE3] uppercase font-semibold">
-            Fetch Hub
+            Fetch <SiFarfetch className="inline" /> Hub
           </h1>
         </a>
       </div>
