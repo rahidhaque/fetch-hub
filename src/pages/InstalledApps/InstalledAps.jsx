@@ -29,6 +29,18 @@ const InstalledAps = () => {
     });
   };
 
+  const handleSort = (type) => {
+    const sortedApps = [...myApps].sort((a, b) => {
+      if (type === "asc") {
+        return a.size - b.size; 
+      } else {
+        return b.size - a.size; 
+      }
+    });
+
+    setMyApps(sortedApps);
+  };
+
   return (
     <div className="mt-8 max-w-7xl mx-auto px-4 py-8">
       <div className="space-y-2">
@@ -40,23 +52,27 @@ const InstalledAps = () => {
         </p>
       </div>
       <div className="mt-8">
-        {/* "image": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Zoom_Communications_Logo.svg",
-    "title": "Zoom",
-    "companyName": "Zoom Video Communications",
-    "id": 19,
-    "description": "Zoom is a video conferencing and collaboration platform used for meetings, webinars, online classes, and virtual events. It supports HD video, screen sharing, breakout rooms, recording, and chat. Zoom is widely used by businesses, schools, and individuals for remote communication.",
-    "size": 75,
-    "reviews": 2500000,
-    "ratingAvg": 4.3,
-    "downloads": 1000000000,
-    "ratings": [
-      { "name": "1 star", "count": 180000 },
-      { "name": "2 star", "count": 150000 },
-      { "name": "3 star", "count": 400000 },
-      { "name": "4 star", "count": 850000 },
-      { "name": "5 star", "count": 920000 }
-    ] */}
         <div>
+          <div className="flex justify-between items-center">
+            <div>
+              <p className="underline font-extrabold">
+                {myApps?.length || 0} Apps Installed
+              </p>
+            </div>
+            <div>
+              <details className="dropdown flex justify-center mb-6">
+                <summary className="btn m-1">Sort by Size</summary>
+                <ul className="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                  <li>
+                    <a onClick={() => handleSort("asc")}>Low-High</a>
+                  </li>
+                  <li>
+                    <a onClick={() => handleSort("desc")}>High-Low</a>
+                  </li>
+                </ul>
+              </details>
+            </div>
+          </div>
           {myApps && myApps.length > 0 ? (
             <div>
               <ul className="grid grid-cols-1 gap-6">
@@ -88,12 +104,17 @@ const InstalledAps = () => {
                             </div>
                           </div>
                           <div>
-                            <span className="text-[#627382]">{app.size} MB</span>
+                            <span className="text-[#627382]">
+                              {app.size} MB
+                            </span>
                           </div>
                         </div>
                       </div>
                       <div>
-                        <button onClick={() => handleUninstall(app.id)} className="btn btn-success text-white">
+                        <button
+                          onClick={() => handleUninstall(app.id)}
+                          className="btn btn-success text-white"
+                        >
                           Uninstall
                         </button>
                       </div>
