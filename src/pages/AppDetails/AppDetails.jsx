@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData } from "react-router";
 import downloadIcon from "../../assets/icon-downloads.png";
 import ratingIcon from "../../assets/icon-ratings.png";
@@ -11,10 +11,15 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-
+import { addToStoredDB, getStoredApps } from "../../utilities/addToDB";
+import { toast } from "react-toastify";
 
 const AppDetails = () => {
   const app = useLoaderData();
+   const [isInstalled, setIsInstalled] = useState(() => {
+    const storedApps = getStoredApps();
+    return storedApps.includes(app.id); 
+  });
 
   const downloadFormatter = Intl.NumberFormat("en", {
     notation: "compact",
@@ -22,6 +27,15 @@ const AppDetails = () => {
   });
 
   const ratingData = [...app.ratings].reverse();
+
+  const handleInstallApps = (id) => {
+    addToStoredDB(id);
+    setIsInstalled(true);
+    toast.success("App installed successfully!", {
+      position: "top-right",
+      autoClose: 3000,
+    });
+  };
 
   return (
     <div className="mt-8 max-w-7xl mx-auto px-4 py-8">
@@ -69,6 +83,15 @@ const AppDetails = () => {
               <div className="stat-title">Total Reviews</div>
               <div className="stat-value">{app.reviews.toLocaleString()}</div>
             </div>
+          </div>
+          <div>
+            <button
+              onClick={() => handleInstallApps(app.id)}
+              className="btn btn-success text-white disabled:bg-green-500 disabled:text-white disabled:cursor-not-allowed"
+              disabled={isInstalled}
+            >
+              {isInstalled ? "Installed" : `Install (${app.size}MB)`}
+            </button>
           </div>
         </div>
       </div>
